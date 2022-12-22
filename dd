@@ -1,10 +1,10 @@
 
 local esp = {
-    enabled        = true;
+    enabled        = false;
     teamcheck      = false;
     displayname    = true;
     limitdistance  = false;
-    boldtext       = true;
+    boldtext       = false;
     maxdistance    = 1000;
     arrowradius    = 500;
     arrowsize      = 20;
@@ -17,25 +17,25 @@ local esp = {
     players        = {};
     connections    = {};
     infov          = {};
-    outline        = {true, Color3.new(0,0,0)};
-    box            = {true, Color3.new(1,1,1), 1};
-    boxfill        = {true, Color3.new(1,.25,.25), .5};
+    outline        = {false, Color3.new(0,0,0)};
+    box            = {false, Color3.new(1,1,1), 1};
+    boxfill        = {false, Color3.new(1,.25,.25), .5};
     tracer         = {false};
-    snapline       = {true, Color3.new(1,1,1), 1, 1, 'Head'};
-    angle          = {true, Color3.new(1,1,1), 1};
-    arrow          = {true, Color3.new(1,1,1), 1};
-    chams          = {true, Color3.new(1,1,1), Color3.new(1,1,1), 1, 1, true};
+    snapline       = {false, Color3.new(1,1,1), 1, 1, 'Head'};
+    angle          = {false, Color3.new(1,1,1), 1};
+    arrow          = {false, Color3.new(1,1,1), 1};
+    chams          = {false, Color3.new(1,1,1), Color3.new(1,1,1), 1, 1, true};
     NameESP     = {
-        ['Name']     = {Position = 'top', Enabled = true, Color = Color3.new(1,1,1), Transparency = 0};
+        ['Name']     = {Position = 'top', Enabled = false, Color = Color3.new(1,1,1), Transparency = 0};
         };
-      DistanceESP     = {   ['Distance'] = {Position = 'bottom', Enabled = true, Default = 'NaN', Suffix = 'm', Color = Color3.new(1,1,1), Transparency = 0};
+      DistanceESP     = {   ['Distance'] = {Position = 'bottom', Enabled = false, Default = 'NaN', Suffix = 'm', Color = Color3.new(1,1,1), Transparency = 0};
           };
-     ToolESP     = {  ['Tool']     = {Position = 'bottom', Enabled = true, Default = 'None', Color = Color3.new(1,1,1), Transparency = 0};
+     ToolESP     = {  ['Tool']     = {Position = 'bottom', Enabled = false, Default = 'None', Color = Color3.new(1,1,1), Transparency = 0};
            };
-     HealthESP     = {   ['Health']   = {Position = 'left', Enabled = true, IgnoreTarget = true, Default = 'NaN', Color = Color3.new(1,1,1), Transparency = 0};
+     HealthESP     = {   ['Health']   = {Position = 'left', Enabled = false, IgnoreTarget = false, Default = 'NaN', Color = Color3.new(1,1,1), Transparency = 0};
     };
     HealthBAR      = {
-        ['Health']   = {Position = 'left', Enabled = true, Color1 = Color3.new(1,0,0), Color2 = Color3.new(0,1,0), Transparency = 0};
+        ['Health']   = {Position = 'left', Enabled = false, Color1 = Color3.new(1,0,0), Color2 = Color3.new(0,1,0), Transparency = 0};
     };
 }
 
