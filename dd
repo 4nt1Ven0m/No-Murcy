@@ -1,15 +1,5 @@
 
-local Players = game:GetService("Players")
-local a = debug.getupvalue(getrenv()._G.Player.GetPlayerModel, 1)
 
-while true do task.wait(0.1)
-    for _, v in pairs(a) do
-        local Player = Players:FindFirstChild(v.name)
-        if Player then
-            Player.Character = v.model
-        end
-    end
-end
 
 local esp = {
     enabled        = false;
